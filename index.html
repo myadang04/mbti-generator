@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>WHAT IS YOUR MBTI?</h1>
+        <p>Take this Myers Briggs test to find out!</p>
+        
+        <form id="quiz">
+            <!-- Question 1 -->
+            <h2>Where do you get your energy?</h2>
+
+            <label><input type="radio" name="q1" value="E">
+                Stimuli within the outside world
+            </label><br />
+            <label><input type="radio" name="q1" value="I">
+                Self-reflection and staying within your own world
+            </label><br />
+        
+            <!-- Question 2 -->
+            <h2>How do you take in information?</h2>
+
+            <label><input type="radio" name="q2" value="S">
+                Get hard facts and direct answers
+            </label><br />
+            <label><input type="radio" name="q2" value="N">
+                Get a "feeling" through patterns, body language, energy
+            </label><br />
+            
+            <!-- Question 3 -->
+            <h2>How do you make decisions?</h2>
+
+            <label><input type="radio" name="q3" value="T">
+                Create a pros and cons list and rely on logical thought
+            </label><br />
+            <label><input type="radio" name="q3" value="F">
+                Go with your gut feeling and rely on emotions
+            </label><br />
+            
+            <!-- Question 4 -->
+            <h2>How do you organize your world?</h2>
+
+            <label><input type="radio" name="q4" value="J">
+                Plan most areas of your life and predict what you will do next
+            </label><br />
+            <label><input type="radio" name="q4" value="P">
+                Leave things open to change and be more flexible
+            </label><br />
+        
+            <button type="submit" id="submit" onclick="findMbti()">Submit Your Answer</button>
+            <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+        </form>
+        
+        
+        <div id="answer">Your result will show up here!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
